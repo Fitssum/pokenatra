@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS pokemons;
+
+CREATE TABLE pokemons (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  cp VARCHAR(100) NOT NULL,
+  poke_type VARCHAR(100) NOT NULL,
+  img_url VARCHAR(100) NOT NULL
+);
