@@ -35,7 +35,7 @@ end
 put '/pokemons/:id' do #updates/puts pokemons
   @pokemon = Pokemon.find(params[:id])
   @pokemon.update(params[:pokemon])
-  redirect "/pokemons/:id/edit"
+  redirect "/pokemons/index"
 end
 
 get "/pokemons/:id/delete" do #finds pokemons for deleting - checked
